@@ -22,8 +22,7 @@ public class QueryReadStudentDemo {
 		
 		// Query List 
 		
-		List<Student> myListStudent = 
-				session.createQuery("from Student").list();
+		List<Student> myListStudent = session.createQuery("from Student").list();
 		
 		// display student in Query
 		
@@ -36,7 +35,7 @@ public class QueryReadStudentDemo {
 		System.out.println("Done!");
 		
 	}catch (Exception e) {
-		System.out.println("Loi");
+		System.out.println("Error");
 	}finally {
 		
 		factory.close();
