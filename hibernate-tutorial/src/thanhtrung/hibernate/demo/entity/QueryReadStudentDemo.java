@@ -22,7 +22,7 @@ public class QueryReadStudentDemo {
 		
 		// Query List 
 		
-		List<Student> myListStudent = session.createQuery("from Student").list();
+		List<Student> myListStudent = session.createQuery("from Student").getResultList();
 		
 		// display student in Query
 		
